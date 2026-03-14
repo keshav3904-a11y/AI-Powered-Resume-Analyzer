@@ -1,0 +1,17 @@
+packages:
+  "pdfjs-dist": "Extracting text from PDF files client-side before sending to backend"
+  "recharts": "Data visualization for the results dashboard (gauge, pie, bar charts)"
+  "framer-motion": "Animations and page transitions for a premium feel"
+  "zustand": "State management across the multi-step analysis flow (wizard-like)"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes without style conflicts"
+
+images:
+  - path: "artifacts/resume-analyzer/public/images/hero-bg.png"
+    description: "Clean, professional, modern abstract background with soft blue and indigo gradients and subtle geometric mesh patterns, suitable for an enterprise AI platform"
+    aspect_ratio: "16:9"
+
+notes:
+  - "pdfjs-dist uses a CDN for its worker script to avoid Vite build configuration issues."
+  - "Using Zustand to hold the uploaded file, extracted text, selected role, and analysis result across route changes."
+  - "React Query hooks are imported from @workspace/api-client-react."

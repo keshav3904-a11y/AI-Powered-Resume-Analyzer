@@ -1,0 +1,235 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: AI-Powered Resume Analyzer API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: resume
+    description: Resume analysis operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /resume/analyze:
+    post:
+      operationId: analyzeResume
+      tags: [resume]
+      summary: Analyze a resume against a job role
+      description: Accepts PDF resume text and job role, returns detailed analysis
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AnalyzeResumeRequest"
+      responses:
+        "200":
+          description: Analysis result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AnalyzeResumeResponse"
+        "400":
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /resume/job-roles:
+    get:
+      operationId: getJobRoles
+      tags: [resume]
+      summary: Get all predefined job roles grouped by category
+      description: Returns list of available job roles with their required skills and categories
+      responses:
+        "200":
+          description: List of job roles
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobRolesResponse"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    AnalyzeResumeRequest:
+      type: object
+      properties:
+        resumeText:
+          type: string
+          description: Extracted text from the resume PDF
+        jobRole:
+          type: string
+          description: The job role id to match against (use "__custom__" for custom roles)
+        customSkills:
+          type: array
+          items:
+            type: string
+          description: Required skills for a custom job role (only used when jobRole is "__custom__")
+        customRoleTitle:
+          type: string
+          description: Title for the custom job role
+      required:
+        - resumeText
+        - jobRole
+
+    AnalyzeResumeResponse:
+      type: object
+      properties:
+        candidateName:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        overallScore:
+          type: number
+          description: Overall match score 0-100
+        skillScore:
+          type: number
+        experienceScore:
+          type: number
+        educationScore:
+          type: number
+        projectScore:
+          type: number
+        detectedSkills:
+          type: array
+          items:
+            type: string
+        missingSkills:
+          type: array
+          items:
+            type: string
+        matchedSkills:
+          type: array
+          items:
+            type: string
+        requiredSkills:
+          type: array
+          items:
+            type: string
+        education:
+          type: array
+          items:
+            type: string
+        experience:
+          type: string
+        projects:
+          type: array
+          items:
+            type: string
+        certifications:
+          type: array
+          items:
+            type: string
+        resumeSummary:
+          type: string
+        strengthAreas:
+          type: array
+          items:
+            type: string
+        improvementTips:
+          type: array
+          items:
+            type: string
+        skillRecommendations:
+          type: array
+          items:
+            type: string
+        explainability:
+          type: string
+        skillCoveragePercent:
+          type: number
+      required:
+        - overallScore
+        - skillScore
+        - experienceScore
+        - educationScore
+        - projectScore
+        - detectedSkills
+        - missingSkills
+        - matchedSkills
+        - requiredSkills
+        - education
+        - experience
+        - projects
+        - certifications
+        - resumeSummary
+        - strengthAreas
+        - improvementTips
+        - skillRecommendations
+        - explainability
+        - skillCoveragePercent
+
+    JobRole:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        category:
+          type: string
+        requiredSkills:
+          type: array
+          items:
+            type: string
+        description:
+          type: string
+      required:
+        - id
+        - title
+        - category
+        - requiredSkills
+        - description
+
+    JobRolesResponse:
+      type: object
+      properties:
+        roles:
+          type: array
+          items:
+            $ref: "#/components/schemas/JobRole"
+        categories:
+          type: array
+          items:
+            type: string
+      required:
+        - roles
+        - categories
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+      required:
+        - error
+        - message

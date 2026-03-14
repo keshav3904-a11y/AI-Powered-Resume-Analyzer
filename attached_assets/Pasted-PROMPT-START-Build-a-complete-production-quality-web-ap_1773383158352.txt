@@ -1,0 +1,428 @@
+PROMPT START
+
+Build a complete production-quality web application called AI-Powered Resume Analyzer using Python + Streamlit + NLP + Machine Learning.
+
+The application must follow a clean modular architecture, intuitive UI, and extremely easy navigation so that even non-technical users can operate it easily.
+
+The system must analyze a resume uploaded by the user and calculate how well it matches a job role using AI-based logic.
+
+1 PROJECT OBJECTIVE
+
+Create an intelligent resume analysis system that:
+
+• Accepts resumes in PDF format
+• Extracts structured information from resumes
+• Extracts skills, education, experience, projects, and certifications
+• Allows user to select a predefined job role
+• Compares resume with job role requirements
+• Calculates match score (%)
+• Shows missing skills
+• Shows strength areas
+• Shows visual analytics
+
+This system should simulate an AI hiring assistant used by recruiters.
+
+2 TECHNOLOGY STACK
+
+Use the following technologies:
+
+Frontend:
+Streamlit
+
+Backend:
+Python
+
+Libraries:
+
+spacy
+
+nltk
+
+scikit-learn
+
+PyPDF2
+
+pandas
+
+numpy
+
+matplotlib
+
+plotly
+
+re (regex)
+
+Optional:
+sentence-transformers for semantic similarity.
+
+3 PROJECT STRUCTURE
+
+Create a clean modular folder structure:
+
+resume-analyzer/
+│
+├── app.py
+│
+├── modules/
+│   ├── resume_parser.py
+│   ├── text_preprocessing.py
+│   ├── job_roles.py
+│   ├── skill_extractor.py
+│   ├── similarity_engine.py
+│   ├── scoring_engine.py
+│   └── visualization.py
+│
+├── data/
+│   └── skills_database.json
+│
+├── utils/
+│   ├── file_handler.py
+│   └── constants.py
+│
+├── assets/
+│   └── styles.css
+│
+└── requirements.txt
+
+Each module must be clean, reusable, and well commented.
+
+4 USER INTERFACE DESIGN
+
+The UI must be modern, clean, and very easy to navigate.
+
+Create a sidebar navigation with these sections:
+
+Sidebar Menu
+
+1️⃣ Home
+2️⃣ Upload Resume
+3️⃣ Job Role Selection
+4️⃣ Resume Analysis
+5️⃣ Results Dashboard
+6️⃣ About Project
+
+Navigation must be simple and intuitive.
+
+5 HOME PAGE
+
+Show:
+
+Title
+"AI Powered Resume Analyzer"
+
+Description explaining the system.
+
+Explain the workflow:
+
+Step 1 Upload Resume
+Step 2 Select Job Role
+Step 3 AI Analysis
+Step 4 View Match Score
+
+Add icons and visual boxes.
+
+6 RESUME UPLOAD MODULE
+
+Allow user to upload file.
+
+Supported format:
+
+PDF only.
+
+Perform validation:
+
+• File size limit
+• Check readable file
+• Reject corrupted files
+
+After upload show:
+
+✔ File name
+✔ Upload success message
+
+Extract text using PyPDF2.
+
+7 TEXT PREPROCESSING MODULE
+
+Clean the extracted text.
+
+Perform:
+
+Lowercasing
+Remove special characters
+Remove stopwords
+Remove extra spaces
+Tokenization
+
+Use NLTK or spaCy.
+
+Return cleaned text.
+
+8 RESUME PARSING MODULE
+
+Extract structured information.
+
+Use NLP techniques.
+
+Extract:
+
+Candidate Name
+Email
+Phone number
+Education
+Skills
+Experience
+Projects
+Certifications
+
+Use regex + NLP patterns.
+
+Store results in dictionary format.
+
+Example:
+
+{
+name:"",
+email:"",
+skills:[],
+education:[],
+experience:"",
+projects:[]
+}
+9 SKILL DATABASE
+
+Create a skill dataset containing skills like:
+
+Python
+Java
+SQL
+Machine Learning
+Deep Learning
+NLP
+TensorFlow
+PyTorch
+Data Analysis
+Communication
+Leadership
+
+Store in JSON file.
+
+10 JOB ROLE DATABASE
+
+Create predefined job roles:
+
+Data Scientist
+Machine Learning Engineer
+Software Developer
+Data Analyst
+AI Engineer
+
+Each role should contain required skills.
+
+Example:
+
+Data Scientist:
+
+Python
+Statistics
+Machine Learning
+Pandas
+Data Visualization
+SQL
+
+11 SKILL EXTRACTION ENGINE
+
+Compare resume text with skill database.
+
+Extract matching skills using NLP.
+
+Return:
+
+Detected skills
+Skill frequency
+
+12 AI MATCHING ENGINE
+
+Implement two types of matching:
+
+Keyword Matching
+
+Calculate overlap between resume skills and job skills.
+
+Semantic Similarity
+
+Use TF-IDF Vectorization with cosine similarity.
+
+Steps:
+
+Vectorize:
+
+Resume text
+Job description
+
+Compute similarity score.
+
+13 SCORING SYSTEM
+
+Create a weighted scoring system:
+
+Skill Match → 50%
+Experience Match → 25%
+Education Match → 15%
+Project Relevance → 10%
+
+Final Score:
+
+0 – 100 %
+
+Display score.
+
+Example:
+
+Match Score: 78%
+
+14 MISSING SKILLS DETECTION
+
+Identify skills required for job but not found in resume.
+
+Show:
+
+Missing Skills List
+
+Example:
+
+Missing Skills:
+TensorFlow
+Deep Learning
+Statistics
+
+15 RESULTS DASHBOARD
+
+Create a visual analytics dashboard.
+
+Show:
+
+Resume Score
+Skill Match Chart
+Detected Skills
+Missing Skills
+Skill Coverage %
+
+Use Plotly or Matplotlib.
+
+Charts:
+
+Pie Chart → Skill Match
+Bar Chart → Skill Distribution
+Gauge Chart → Match Score
+
+16 EXPLAINABILITY
+
+Provide explanation of score.
+
+Example:
+
+"Your resume matches 75% of the required skills for Data Scientist role."
+
+Explain strengths and weaknesses.
+
+17 USER EXPERIENCE
+
+Navigation must be extremely simple.
+
+Add:
+
+Back buttons
+Clear instructions
+Progress indicators
+
+User flow must be:
+
+Upload → Role → Analyze → Results
+
+18 PERFORMANCE
+
+Ensure:
+
+Fast response
+Lightweight code
+Clean modular functions
+
+Avoid unnecessary heavy models.
+
+19 ERROR HANDLING
+
+Handle errors for:
+
+Invalid PDF
+Empty resume
+Unsupported file
+Parsing errors
+
+Show friendly error messages.
+
+20 ABOUT PAGE
+
+Show project details:
+
+Project Name
+AI Powered Resume Analyzer
+
+Developers:
+
+Kevalram Vaishnav
+Keshav Agarwal
+
+Department:
+
+Computer Science Engineering (AI & ML)
+
+Institution:
+
+Jodhpur Institute of Engineering and Technology
+
+21 CODE QUALITY
+
+Requirements:
+
+• Modular code
+• Comments in every function
+• Clean architecture
+• Proper variable names
+
+22 REQUIREMENTS.TXT
+
+Generate requirements file.
+
+Include:
+
+streamlit
+spacy
+nltk
+scikit-learn
+PyPDF2
+pandas
+numpy
+matplotlib
+plotly
+
+23 EXTRA FEATURES (IMPORTANT)
+
+Add these advanced features:
+
+Resume summary generator
+Skill recommendation system
+Download result report
+Resume improvement tips
+
+24 FINAL OUTPUT
+
+The application must:
+
+✔ Run instantly on Replit
+✔ Have clean UI
+✔ Have smooth navigation
+✔ Be modular and well documented
+✔ Be easy to demonstrate for academic project
+
+PROMPT END

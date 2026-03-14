@@ -1,0 +1,223 @@
+{
+  "Technology": {
+    "Data Scientist": {
+      "skills": ["Python", "Machine Learning", "Statistics", "Pandas", "NumPy", "SQL", "Data Visualization", "Scikit-learn", "TensorFlow", "Deep Learning", "NLP", "Tableau", "R", "Hypothesis Testing", "Feature Engineering"]
+    },
+    "Machine Learning Engineer": {
+      "skills": ["Python", "Machine Learning", "TensorFlow", "PyTorch", "Deep Learning", "MLOps", "Docker", "Kubernetes", "AWS", "Spark", "SQL", "Feature Engineering", "Model Deployment", "API Development", "Git"]
+    },
+    "AI Engineer": {
+      "skills": ["Python", "TensorFlow", "PyTorch", "NLP", "Computer Vision", "Deep Learning", "LLM", "Transformers", "Machine Learning", "API Development", "Docker", "Cloud Computing", "Prompt Engineering", "RAG", "LangChain"]
+    },
+    "Software Developer": {
+      "skills": ["Java", "Python", "JavaScript", "TypeScript", "Data Structures", "Algorithms", "Git", "OOP", "REST API", "Agile", "SQL", "Problem Solving", "HTML", "CSS", "Unit Testing"]
+    },
+    "Backend Developer": {
+      "skills": ["Node.js", "Python", "Java", "SQL", "PostgreSQL", "MongoDB", "REST API", "Docker", "Git", "Microservices", "Redis", "GraphQL", "CI/CD", "Linux", "Authentication"]
+    },
+    "Frontend Developer": {
+      "skills": ["JavaScript", "TypeScript", "React", "HTML", "CSS", "Tailwind", "Redux", "REST API", "Git", "Figma", "Responsive Design", "Testing", "Performance Optimization", "Vue.js", "Next.js"]
+    },
+    "Full Stack Developer": {
+      "skills": ["JavaScript", "TypeScript", "React", "Node.js", "SQL", "MongoDB", "HTML", "CSS", "Git", "REST API", "Docker", "CI/CD", "Agile", "GraphQL", "AWS"]
+    },
+    "DevOps Engineer": {
+      "skills": ["Docker", "Kubernetes", "Linux", "CI/CD", "Jenkins", "Terraform", "Ansible", "AWS", "Azure", "Git", "Bash", "Monitoring", "Networking", "Python", "Security"]
+    },
+    "Cloud Engineer": {
+      "skills": ["AWS", "Azure", "GCP", "Terraform", "Docker", "Kubernetes", "Networking", "Security", "Linux", "Python", "CI/CD", "Serverless", "Cost Optimization", "IAM", "Storage"]
+    },
+    "Cybersecurity Analyst": {
+      "skills": ["Network Security", "SIEM", "Penetration Testing", "Firewalls", "Linux", "Python", "Incident Response", "Risk Assessment", "Cryptography", "Compliance", "Threat Analysis", "Vulnerability Management", "Wireshark", "IDS/IPS", "OWASP"]
+    },
+    "Network Engineer": {
+      "skills": ["Cisco", "TCP/IP", "Routing", "Switching", "Firewalls", "VPN", "Linux", "Networking Protocols", "LAN/WAN", "Network Security", "CCNA", "Troubleshooting", "SDN", "BGP", "OSPF"]
+    },
+    "Data Analyst": {
+      "skills": ["SQL", "Excel", "Python", "Tableau", "Power BI", "Statistics", "Data Visualization", "Pandas", "R", "Business Intelligence", "Reporting", "Data Cleaning", "Critical Thinking", "Communication", "ETL"]
+    },
+    "Business Intelligence Analyst": {
+      "skills": ["SQL", "Power BI", "Tableau", "Data Warehousing", "ETL", "Excel", "DAX", "Data Modeling", "Business Analysis", "Reporting", "Python", "Stakeholder Management", "Dashboard Design", "KPIs", "Data Storytelling"]
+    },
+    "Database Administrator": {
+      "skills": ["SQL", "PostgreSQL", "MySQL", "Oracle", "Database Design", "Performance Tuning", "Backup Recovery", "Linux", "Security", "Data Modeling", "MongoDB", "Replication", "Query Optimization", "Scripting", "High Availability"]
+    },
+    "Blockchain Developer": {
+      "skills": ["Solidity", "Ethereum", "Smart Contracts", "Web3.js", "JavaScript", "Python", "Cryptography", "DeFi", "NFT", "Rust", "Blockchain Architecture", "Truffle", "Hardhat", "IPFS", "Security Auditing"]
+    },
+    "Mobile App Developer": {
+      "skills": ["React Native", "Flutter", "Swift", "Kotlin", "iOS", "Android", "JavaScript", "Dart", "REST API", "Firebase", "Git", "UI/UX", "App Store Deployment", "Testing", "Push Notifications"]
+    },
+    "Game Developer": {
+      "skills": ["Unity", "Unreal Engine", "C#", "C++", "Game Design", "3D Modeling", "Physics", "Shader Programming", "Networking", "Optimization", "Python", "OpenGL", "Game Mechanics", "VR/AR", "Animation"]
+    },
+    "Embedded Systems Engineer": {
+      "skills": ["C", "C++", "Microcontrollers", "RTOS", "Hardware", "Assembly", "UART", "SPI", "I2C", "Linux", "Python", "Debugging", "PCB Design", "Signal Processing", "IoT"]
+    },
+    "QA Engineer": {
+      "skills": ["Selenium", "Cypress", "Manual Testing", "Test Automation", "JIRA", "SQL", "Python", "API Testing", "Performance Testing", "Agile", "Test Cases", "Bug Tracking", "CI/CD", "Java", "Postman"]
+    },
+    "Site Reliability Engineer": {
+      "skills": ["Linux", "Python", "Kubernetes", "Docker", "Monitoring", "Prometheus", "Grafana", "CI/CD", "Incident Management", "Automation", "AWS", "Terraform", "Go", "Distributed Systems", "SLO/SLA"]
+    },
+    "Deep Learning Engineer": {
+      "skills": ["Python", "PyTorch", "TensorFlow", "Neural Networks", "CNN", "RNN", "LSTM", "Transformers", "GPU Computing", "CUDA", "Data Augmentation", "Model Optimization", "Computer Vision", "NLP", "Research"]
+    },
+    "NLP Engineer": {
+      "skills": ["Python", "NLP", "NLTK", "spaCy", "BERT", "GPT", "Transformers", "Text Classification", "Named Entity Recognition", "Machine Learning", "TensorFlow", "PyTorch", "HuggingFace", "LLM", "Information Retrieval"]
+    },
+    "Computer Vision Engineer": {
+      "skills": ["Python", "OpenCV", "TensorFlow", "PyTorch", "CNN", "Object Detection", "YOLO", "Image Segmentation", "Computer Vision", "C++", "CUDA", "Deep Learning", "Data Augmentation", "3D Vision", "Medical Imaging"]
+    },
+    "Data Engineer": {
+      "skills": ["Python", "SQL", "Apache Spark", "Hadoop", "Kafka", "Airflow", "ETL", "Data Pipelines", "AWS", "GCP", "Scala", "Data Warehousing", "DBT", "Snowflake", "Docker"]
+    },
+    "MLOps Engineer": {
+      "skills": ["Python", "Docker", "Kubernetes", "MLflow", "Kubeflow", "CI/CD", "Model Monitoring", "AWS SageMaker", "TensorFlow Serving", "Feature Stores", "Data Versioning", "Git", "Terraform", "Monitoring", "Automation"]
+    },
+    "AI Research Scientist": {
+      "skills": ["Python", "Machine Learning", "Deep Learning", "Research", "Mathematics", "Statistics", "Publications", "PyTorch", "TensorFlow", "Experimentation", "Linear Algebra", "Reinforcement Learning", "Literature Review", "PhD", "Innovation"]
+    }
+  },
+  "Business": {
+    "Business Analyst": {
+      "skills": ["Requirements Gathering", "Business Analysis", "JIRA", "SQL", "Data Analysis", "Stakeholder Management", "Process Mapping", "Agile", "Excel", "Reporting", "UML", "Documentation", "Communication", "Problem Solving", "Power BI"]
+    },
+    "Project Manager": {
+      "skills": ["Project Management", "Agile", "Scrum", "PMP", "JIRA", "Risk Management", "Stakeholder Management", "Budgeting", "MS Project", "Communication", "Leadership", "Resource Planning", "Kanban", "Change Management", "Reporting"]
+    },
+    "Product Manager": {
+      "skills": ["Product Strategy", "Roadmap Planning", "Agile", "Scrum", "User Research", "Data Analysis", "Stakeholder Management", "JIRA", "SQL", "A/B Testing", "Market Research", "Communication", "Leadership", "UX", "Prioritization"]
+    },
+    "Operations Manager": {
+      "skills": ["Operations Management", "Process Improvement", "Leadership", "Supply Chain", "Budgeting", "KPIs", "Team Management", "Excel", "ERP Systems", "Problem Solving", "Communication", "Lean", "Six Sigma", "Reporting", "Vendor Management"]
+    },
+    "HR Manager": {
+      "skills": ["Recruitment", "Employee Relations", "HRIS", "Performance Management", "Compensation", "Labor Law", "Training", "Onboarding", "Conflict Resolution", "Communication", "Payroll", "Talent Acquisition", "Policy Development", "Leadership", "Excel"]
+    },
+    "Marketing Manager": {
+      "skills": ["Digital Marketing", "SEO", "Social Media", "Content Marketing", "Google Analytics", "Email Marketing", "Brand Management", "Campaign Management", "Data Analysis", "Communication", "Budget Management", "CRM", "Copywriting", "Strategy", "Leadership"]
+    },
+    "Sales Manager": {
+      "skills": ["Sales Strategy", "CRM", "Salesforce", "Negotiation", "Lead Generation", "Communication", "Team Management", "B2B Sales", "Revenue Growth", "KPIs", "Customer Relationship", "Forecasting", "Presentation", "Leadership", "Problem Solving"]
+    },
+    "Financial Analyst": {
+      "skills": ["Financial Modeling", "Excel", "SQL", "Valuation", "Data Analysis", "Forecasting", "Reporting", "Accounting", "PowerPoint", "Python", "Bloomberg", "Risk Analysis", "Budgeting", "Communication", "Attention to Detail"]
+    },
+    "Account Manager": {
+      "skills": ["Client Management", "CRM", "Sales", "Communication", "Negotiation", "Upselling", "Customer Success", "Problem Solving", "Presentation", "Excel", "Relationship Building", "Contract Management", "Reporting", "Forecasting", "Empathy"]
+    },
+    "Supply Chain Manager": {
+      "skills": ["Supply Chain Management", "Logistics", "ERP", "SAP", "Inventory Management", "Procurement", "Vendor Management", "Data Analysis", "Excel", "Forecasting", "Lean", "Process Improvement", "Communication", "Risk Management", "Negotiation"]
+    },
+    "Strategy Consultant": {
+      "skills": ["Business Strategy", "Data Analysis", "Excel", "PowerPoint", "Market Research", "Problem Solving", "Communication", "Financial Modeling", "Project Management", "Stakeholder Management", "Consulting Frameworks", "Critical Thinking", "Presentation", "Research", "Leadership"]
+    }
+  },
+  "Finance": {
+    "Accountant": {
+      "skills": ["Accounting", "Excel", "Financial Reporting", "Tax", "Auditing", "GAAP", "QuickBooks", "Balance Sheet", "Accounts Payable", "Accounts Receivable", "Reconciliation", "Compliance", "Attention to Detail", "Communication", "ERP"]
+    },
+    "Auditor": {
+      "skills": ["Auditing", "Accounting", "GAAP", "Risk Assessment", "Internal Controls", "Excel", "Compliance", "CPA", "Financial Reporting", "Documentation", "Analytical Skills", "Communication", "IFRS", "ERP Systems", "Attention to Detail"]
+    },
+    "Investment Analyst": {
+      "skills": ["Financial Modeling", "Valuation", "Excel", "Bloomberg", "Equity Research", "Financial Statements", "CFA", "Data Analysis", "SQL", "Python", "Risk Analysis", "Presentation", "Market Analysis", "Communication", "Attention to Detail"]
+    },
+    "Banking Associate": {
+      "skills": ["Banking", "Financial Analysis", "Excel", "Customer Service", "Compliance", "Risk Management", "Credit Analysis", "Regulatory Knowledge", "Communication", "Attention to Detail", "Accounting", "Problem Solving", "Relationship Management", "KYC/AML", "PowerPoint"]
+    },
+    "Risk Analyst": {
+      "skills": ["Risk Management", "Data Analysis", "Excel", "SQL", "Python", "Financial Modeling", "Compliance", "Regulatory Knowledge", "Statistics", "Reporting", "Communication", "Quantitative Analysis", "VaR", "Stress Testing", "Attention to Detail"]
+    },
+    "Tax Consultant": {
+      "skills": ["Tax Law", "Accounting", "Excel", "Tax Planning", "Compliance", "Financial Reporting", "CPA", "GAAP", "Attention to Detail", "Research", "Client Management", "Communication", "Indirect Tax", "Transfer Pricing", "ERP"]
+    },
+    "Financial Planner": {
+      "skills": ["Financial Planning", "Investment Management", "CFP", "Retirement Planning", "Tax Planning", "Excel", "Client Management", "Communication", "Risk Assessment", "Estate Planning", "Insurance", "Portfolio Management", "Relationship Building", "Regulatory Compliance", "Presentation"]
+    }
+  },
+  "Healthcare": {
+    "Doctor": {
+      "skills": ["Clinical Medicine", "Patient Care", "Diagnosis", "Treatment Planning", "Medical Knowledge", "Communication", "Electronic Health Records", "Anatomy", "Pharmacology", "Research", "Teamwork", "Decision Making", "Ethics", "Surgery", "Emergency Medicine"]
+    },
+    "Nurse": {
+      "skills": ["Patient Care", "Clinical Skills", "Medication Administration", "Electronic Health Records", "Communication", "Teamwork", "Critical Thinking", "IV Therapy", "Vital Signs", "Wound Care", "BLS/ACLS", "Patient Education", "Anatomy", "Ethics", "Empathy"]
+    },
+    "Pharmacist": {
+      "skills": ["Pharmacology", "Drug Interactions", "Patient Counseling", "Prescription Processing", "Medication Management", "Clinical Knowledge", "Attention to Detail", "Communication", "Regulatory Compliance", "EHR", "Chemistry", "Customer Service", "Research", "Teamwork", "Leadership"]
+    },
+    "Medical Laboratory Technician": {
+      "skills": ["Laboratory Testing", "Blood Analysis", "Microbiology", "Pathology", "Medical Equipment", "Attention to Detail", "Quality Control", "Safety Protocols", "Data Analysis", "Communication", "PCR", "Hematology", "Chemistry", "Documentation", "Teamwork"]
+    },
+    "Healthcare Administrator": {
+      "skills": ["Healthcare Management", "Budget Management", "Compliance", "HIPAA", "Staff Management", "EHR", "Policy Development", "Communication", "Leadership", "Process Improvement", "Data Analysis", "Regulatory Knowledge", "Strategic Planning", "Patient Relations", "Excel"]
+    },
+    "Clinical Research Associate": {
+      "skills": ["Clinical Trials", "GCP", "ICH Guidelines", "Protocol Development", "Data Collection", "FDA Regulations", "Medical Writing", "Site Management", "Patient Safety", "Documentation", "Communication", "Problem Solving", "Attention to Detail", "CTMS", "Teamwork"]
+    }
+  },
+  "Engineering": {
+    "Mechanical Engineer": {
+      "skills": ["CAD", "SolidWorks", "Thermodynamics", "Fluid Mechanics", "Manufacturing", "FEA", "MATLAB", "AutoCAD", "Materials Science", "Product Design", "Testing", "Problem Solving", "Technical Drawing", "GD&T", "Project Management"]
+    },
+    "Civil Engineer": {
+      "skills": ["AutoCAD", "Structural Analysis", "Construction Management", "Surveying", "Materials Science", "Project Management", "STAAD Pro", "Geotechnical Engineering", "Hydraulics", "Building Codes", "Revit", "Cost Estimation", "Safety", "CAD", "Communication"]
+    },
+    "Electrical Engineer": {
+      "skills": ["Circuit Design", "MATLAB", "AutoCAD Electrical", "PLC", "Power Systems", "Control Systems", "Signal Processing", "PCB Design", "Embedded Systems", "Testing", "SCADA", "High Voltage", "Simulation", "Project Management", "Problem Solving"]
+    },
+    "Chemical Engineer": {
+      "skills": ["Process Engineering", "MATLAB", "Aspen Plus", "Chemical Reactions", "Thermodynamics", "Safety", "Process Optimization", "Lab Skills", "Data Analysis", "Quality Control", "Plant Design", "Mass Transfer", "Heat Transfer", "Regulatory Compliance", "Problem Solving"]
+    },
+    "Robotics Engineer": {
+      "skills": ["ROS", "Python", "C++", "Control Systems", "Computer Vision", "Machine Learning", "Kinematics", "Embedded Systems", "MATLAB", "Simulation", "Sensors", "Actuators", "AI", "CAD", "Problem Solving"]
+    },
+    "Automobile Engineer": {
+      "skills": ["CAD", "MATLAB", "Vehicle Dynamics", "Internal Combustion Engines", "Automotive Design", "CAE", "CATIA", "Testing", "Quality Control", "Manufacturing", "Aerodynamics", "Materials Science", "Project Management", "Embedded Systems", "Safety Standards"]
+    },
+    "Industrial Engineer": {
+      "skills": ["Process Improvement", "Lean Manufacturing", "Six Sigma", "AutoCAD", "Data Analysis", "Supply Chain", "Simulation", "Project Management", "Quality Control", "Ergonomics", "Statistical Analysis", "ERP", "Capacity Planning", "Root Cause Analysis", "Communication"]
+    }
+  },
+  "Creative": {
+    "UI Designer": {
+      "skills": ["Figma", "Adobe XD", "UI Design", "Design Systems", "Typography", "Color Theory", "Prototyping", "Wireframing", "CSS", "HTML", "Responsive Design", "User Research", "Sketch", "Interaction Design", "Accessibility"]
+    },
+    "UX Designer": {
+      "skills": ["User Research", "Wireframing", "Prototyping", "Figma", "Usability Testing", "Information Architecture", "Interaction Design", "User Personas", "Journey Mapping", "Adobe XD", "Accessibility", "Design Thinking", "A/B Testing", "Communication", "Problem Solving"]
+    },
+    "Graphic Designer": {
+      "skills": ["Adobe Photoshop", "Adobe Illustrator", "InDesign", "Typography", "Color Theory", "Brand Identity", "Print Design", "Digital Design", "Creativity", "Communication", "CorelDRAW", "Motion Graphics", "Layout Design", "Attention to Detail", "Client Management"]
+    },
+    "Product Designer": {
+      "skills": ["Figma", "User Research", "Prototyping", "Design Systems", "Interaction Design", "Visual Design", "Wireframing", "Usability Testing", "Accessibility", "Cross-functional Collaboration", "Problem Solving", "Typography", "Information Architecture", "Agile", "Communication"]
+    },
+    "Animation Artist": {
+      "skills": ["Adobe After Effects", "Maya", "Blender", "3D Animation", "Character Animation", "Motion Graphics", "Rigging", "Adobe Animate", "Storyboarding", "Compositing", "Video Editing", "Creativity", "Attention to Detail", "Rendering", "Visual Effects"]
+    },
+    "Video Editor": {
+      "skills": ["Adobe Premiere Pro", "After Effects", "Color Grading", "Video Editing", "Storytelling", "Audio Editing", "Motion Graphics", "Final Cut Pro", "DaVinci Resolve", "Creativity", "Attention to Detail", "Collaboration", "YouTube", "Social Media Content", "File Management"]
+    },
+    "Content Creator": {
+      "skills": ["Content Writing", "Social Media", "SEO", "Video Production", "Photography", "Copywriting", "Audience Engagement", "Analytics", "Adobe Creative Suite", "Creativity", "Communication", "Brand Storytelling", "Email Marketing", "WordPress", "YouTube"]
+    }
+  },
+  "Education": {
+    "Teacher": {
+      "skills": ["Curriculum Development", "Classroom Management", "Communication", "Lesson Planning", "Assessment", "Differentiated Instruction", "Student Engagement", "Educational Technology", "Patience", "Critical Thinking", "Subject Knowledge", "Collaboration", "Report Writing", "Empathy", "Leadership"]
+    },
+    "Lecturer": {
+      "skills": ["Subject Expertise", "Teaching", "Research", "Curriculum Design", "Assessment", "Communication", "Academic Writing", "Student Mentoring", "Public Speaking", "PowerPoint", "Critical Thinking", "Project Supervision", "Lab Management", "Pedagogy", "Collaboration"]
+    },
+    "Professor": {
+      "skills": ["Research", "Teaching", "Publication", "Grant Writing", "PhD", "Subject Expertise", "Mentoring", "Curriculum Design", "Academic Writing", "Public Speaking", "Critical Analysis", "Lab Management", "Student Supervision", "Conference Presentations", "Collaboration"]
+    },
+    "Academic Researcher": {
+      "skills": ["Research Methodology", "Data Analysis", "Statistical Analysis", "Academic Writing", "Literature Review", "R", "Python", "SPSS", "Grant Writing", "Publication", "Critical Thinking", "Problem Solving", "Qualitative Research", "Quantitative Research", "Collaboration"]
+    },
+    "Curriculum Designer": {
+      "skills": ["Curriculum Development", "Instructional Design", "Learning Management Systems", "Assessment Design", "E-learning", "Bloom's Taxonomy", "Content Writing", "Multimedia", "Educational Technology", "Communication", "Research", "Subject Knowledge", "Project Management", "Collaboration", "Evaluation"]
+    }
+  }
+}

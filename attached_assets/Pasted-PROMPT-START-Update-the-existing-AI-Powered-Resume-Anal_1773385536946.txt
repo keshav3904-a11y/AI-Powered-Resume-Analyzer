@@ -1,0 +1,230 @@
+PROMPT START
+
+Update the existing AI-Powered Resume Analyzer project to support a large and expandable job role database so the system can analyze resumes for users from many different career fields.
+
+Do not modify the existing resume upload, parsing, or scoring logic. Only improve the Job Role module.
+
+1 Goal
+
+Currently the system supports only a few job roles.
+Expand the system to support 50+ job roles across multiple industries.
+
+Users should be able to easily select their job role when analyzing a resume.
+
+The job roles must be stored in a structured database file (JSON) so new roles can be added easily in the future.
+
+2 Create Job Role Database File
+
+Create a new file:
+
+data/job_roles_database.json
+
+Store all job roles in the following format:
+
+{
+ "Data Scientist": {
+  "skills": ["Python","Machine Learning","Statistics","Pandas","SQL","Data Visualization","Deep Learning"]
+ },
+
+ "Software Developer": {
+  "skills": ["Java","Python","Data Structures","Algorithms","Git","Problem Solving"]
+ }
+}
+
+Each job role must contain a list of required skills.
+
+3 Add Job Roles From Multiple Fields
+
+Add many job roles from different industries so that almost any user can use the system.
+
+Include at least 80+ job roles across these domains.
+
+Technology / IT Roles
+
+Data Scientist
+Machine Learning Engineer
+AI Engineer
+Software Developer
+Backend Developer
+Frontend Developer
+Full Stack Developer
+DevOps Engineer
+Cloud Engineer
+Cybersecurity Analyst
+Network Engineer
+Data Analyst
+Business Intelligence Analyst
+Database Administrator
+Blockchain Developer
+Mobile App Developer
+Game Developer
+Embedded Systems Engineer
+QA Engineer
+Site Reliability Engineer
+
+Business / Management Roles
+
+Business Analyst
+Project Manager
+Product Manager
+Operations Manager
+HR Manager
+Marketing Manager
+Sales Manager
+Financial Analyst
+Account Manager
+Supply Chain Manager
+Strategy Consultant
+
+Finance Roles
+
+Accountant
+Auditor
+Investment Analyst
+Banking Associate
+Risk Analyst
+Tax Consultant
+Financial Planner
+
+Healthcare Roles
+
+Doctor
+Nurse
+Pharmacist
+Medical Laboratory Technician
+Healthcare Administrator
+Clinical Research Associate
+
+Engineering Roles
+
+Mechanical Engineer
+Civil Engineer
+Electrical Engineer
+Chemical Engineer
+Robotics Engineer
+Automobile Engineer
+Industrial Engineer
+
+Creative / Design Roles
+
+UI Designer
+UX Designer
+Graphic Designer
+Product Designer
+Animation Artist
+Video Editor
+Content Creator
+
+Education Roles
+
+Teacher
+Lecturer
+Professor
+Academic Researcher
+Curriculum Designer
+
+Data / AI Specialized Roles
+
+Deep Learning Engineer
+NLP Engineer
+Computer Vision Engineer
+Data Engineer
+MLOps Engineer
+AI Research Scientist
+
+4 Improve Job Role Selection UI
+
+Update the Job Role Selection page to:
+
+• Load job roles from the JSON database
+• Display roles in a searchable dropdown menu
+• Allow users to type and find their role quickly
+
+Use Streamlit:
+
+st.selectbox
+
+or
+
+st.multiselect
+
+with search enabled.
+
+5 Add Job Role Categories
+
+Organize roles into categories such as:
+
+Technology
+Business
+Finance
+Healthcare
+Engineering
+Creative
+Education
+
+Show categories first, then roles inside them.
+
+Example UI:
+
+Category → Technology
+Role → Data Scientist
+
+6 Skill Extraction Integration
+
+When a user selects a role:
+
+Load the role skills from JSON
+
+Compare with resume skills
+
+Continue existing scoring process
+
+Do not modify the scoring logic.
+
+7 Make Job Roles Easily Expandable
+
+Ensure the system supports:
+
+• Adding new roles by simply editing JSON
+• No code modification needed
+
+Example future addition:
+
+"Space Engineer":{
+"skills":["Physics","Orbital Mechanics","Aerospace Engineering"]
+}
+8 Add "Custom Job Role" Option
+
+Allow users to select:
+
+Custom Job Role
+
+If selected:
+
+User can manually enter required skills.
+
+Example:
+
+Enter required skills separated by commas
+9 Ensure Backward Compatibility
+
+The update must:
+
+• Work with the existing resume analysis engine
+• Not break current project functionality
+• Only enhance the job role module
+
+10 Performance Requirement
+
+The system should still load quickly even with 100+ job roles.
+
+Final Result
+
+After update the system must allow:
+
+✔ Resume analysis for many different careers
+✔ Easy job role selection
+✔ Searchable job role list
+✔ Expandable job role database
+
+PROMPT END
